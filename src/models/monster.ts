@@ -1,5 +1,6 @@
 class Monster {
-    constructor(body) {
+    [x: string]: any
+    constructor(body: Record<string, unknown>) {
         this.name = body.name
         this.email = body.email
         this.role = body.role

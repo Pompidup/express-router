@@ -1,6 +1,6 @@
 import Monster from "../../models/monster"
 
-const create = (body) => {
+const create = (body: Record<string, unknown>) => {
     const monster = new Monster(body)
     return monster.save()
 }
